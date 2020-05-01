@@ -1,0 +1,35 @@
+{
+   "autoboot" : "true",
+   "bootargs" : "",
+   "brand" : "sparse",
+   "dataset" : [
+      {
+         "name" : "slow-a/backup/__DIRNAME__"
+      }
+   ],
+   "fs" : [
+      {
+         "dir" : "/opt/ooce",
+         "options" : [
+            "ro"
+         ],
+         "special" : "/opt/ooce",
+         "type" : "lofs"
+      }
+   ],
+   "fs-allowed" : "",
+   "hostid" : "",
+   "ip-type" : "exclusive",
+   "limitpriv" : "default",
+   "net" : [
+      {
+         "allowed-address" : "__IP__/__MASK__",
+         "defrouter" : "__IP_GW__",
+         "physical" : "__INTERFACE__"
+      }
+   ],
+   "pool" : "",
+   "scheduling-class" : "",
+   "zonename" : "__ZONENAME__",
+   "zonepath" : "/zcage/vms/__ZONENAME__"
+}

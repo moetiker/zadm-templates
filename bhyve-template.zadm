@@ -1,0 +1,51 @@
+{
+   "attr" : [
+      {
+         "name" : "resolvers",
+         "type" : "string",
+         "value" : "8.8.8.8"
+      },
+      {
+         "name" : "quota",
+         "type" : "string",
+         "value" : "10G"
+      }
+   ],
+   "autoboot" : "true",
+   "bootargs" : "",
+   "bootdisk" : {
+      "block_size" : "128K",
+      "disk_path" : "fast/vm/__ZONEMANE__/root",
+      "disk_size" : "100G",
+      "sparse" : "true"
+   },
+   "bootrom" : "BHYVE_RELEASE",
+   "brand" : "bhyve",
+   "disk" : [
+      {
+         "block_size" : "128K",
+         "disk_path" : "fast/vm-volatile/__ZONENAME__/cachedisk",
+         "disk_size" : "100G",
+         "sparse" : "true"
+      }
+   ],
+   "fs-allowed" : "",
+   "hostbridge" : "i440fx",
+   "hostid" : "",
+   "ip-type" : "exclusive",
+   "limitpriv" : "",
+   "net" : [
+      {
+         "allowed-address" : "__IP__/__MASK__",
+         "defrouter" : "__IP_GW__",
+         "physical" : "__INTERFACE__"
+      }
+   ],
+   "pool" : "",
+   "ram" : "2G",
+   "scheduling-class" : "",
+   "vcpus" : "4",
+   "vnc" : "unix=/tmp/__ZONENAME__.vnc",
+   "zonename" : "__ZONENAME__",
+   "zonepath" : "/zcage/vms/__ZONENAME__"
+}

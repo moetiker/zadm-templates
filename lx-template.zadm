@@ -1,0 +1,33 @@
+{
+   "autoboot" : "true",
+   "bootargs" : "",
+   "brand" : "lx",
+   "capped-memory" : {
+      "locked" : "4G",
+      "physical" : "2G",
+      "swap" : "4G"
+   },
+   "fs-allowed" : "",
+   "hostid" : "",
+   "ip-type" : "exclusive",
+   "kernel-version" : "3.16.0",
+   "limitpriv" : "",
+   "max-lwps" : "3000",
+   "net" : [
+      {
+         "gateway" : "__IP_GW__",
+         "ips" : [
+            "__IP__/__MASK__"
+         ],
+         "physical" : "__NETWORKCARD__",
+         "primary" : "true"
+      }
+   ],
+   "pool" : "",
+   "resolvers" : [
+      "8.8.8.8"
+   ],
+   "scheduling-class" : "",
+   "zonename" : "__ZONENAME__",
+   "zonepath" : "/zcage/vms/__ZONENAME__"
+}
