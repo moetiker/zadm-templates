@@ -15,7 +15,7 @@
    "bootargs" : "",
    "bootdisk" : {
       "block_size" : "128K",
-      "disk_path" : "fast/vm/__ZONEMANE__/root",
+      "disk_path" : "fast/vm/__ZONENAME__/root",
       "disk_size" : "100G",
       "sparse" : "true"
    },
